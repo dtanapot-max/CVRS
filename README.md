@@ -91,3 +91,16 @@ CVRS is external to the target Core:
 `Standard → Adapter → Suites → Isolated Runner → Metrics/Evidence → Gate Engine → Release Decision`
 
 Adapters translate target APIs; they must never weaken or modify target semantics to obtain PASS.
+
+
+## Authority
+
+CVRS normative authority is:
+
+1. `docs/CVRS-STANDARD-v1.0.0.md`
+2. `docs/CVRS-ADAPTER-CONTRACT-v1.0.0.md`
+3. `config/gates.json`
+4. `config/profiles.json`
+5. executable suites / runner
+
+`docs/CVRS-AI-MASTER-PROMPT.md` is supporting AI execution context and must not override the Standard.
