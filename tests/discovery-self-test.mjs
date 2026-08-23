@@ -1,0 +1,18 @@
+import fs from 'node:fs';import os from 'node:os';import path from 'node:path';import {spawnSync} from 'node:child_process';
+const d=fs.mkdtempSync(path.join(os.tmpdir(),'cvrs-discovery-'));
+fs.mkdirSync(path.join(d,'src'));fs.mkdirSync(path.join(d,'tests'));
+fs.writeFileSync(path.join(d,'package.json'),'{"name":"fixture"}');
+fs.writeFileSync(path.join(d,'src','signal.js'),'export const signal=()=>{}');
+fs.writeFileSync(path.join(d,'src','router.js'),'export const router={};');
+fs.writeFileSync(path.join(d,'tests','core.test.js'),'');
+const tool=new URL('../discovery/discover.mjs',import.meta.url).pathname;
+const r=spawnSync(process.execPath,[tool,d],{encoding:'utf8'});
+if(r.status!==0)throw new Error(r.stderr);
+const x=JSON.parse(r.stdout);
+if(!x.capabilities.includes('runtime.javascript'))throw new Error('JS not discovered');
+if(!x.capabilities.includes('reactive'))throw new Error('reactive not discovered');
+if(!x.capabilities.includes('routing'))throw new Error('routing not discovered');
+if(!x.recommendation.builtInTests)throw new Error('tests not discovered');
+if(x.recommendation.executeTargetDuringDiscovery!==false)throw new Error('discovery must be non-executing');
+fs.rmSync(d,{recursive:true,force:true});
+console.log('CVRS DISCOVERY SELF TEST PASS 5/5');

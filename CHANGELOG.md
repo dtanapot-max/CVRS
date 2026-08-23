@@ -1,5 +1,21 @@
 # Changelog
 
+## 2.0.0 — 2026-08-23
+
+- Added safe non-executing target discovery / reverse-engineering front-end.
+- Added Canonical System Model.
+- Added versioned Contract Pack registry.
+- Added candidate verification-plan generation.
+- Preserved CVRS 1.x verification, regression, GVS and Final Selection gates.
+- Added discovery self-test and false-positive safeguards for inferred capabilities.
+
+## 1.2.0 — 2026-08-23
+
+- Added Final Selection Gate and head-to-head Core benchmark runner.
+- Added same-workload 3-process comparison with Median/P95/P99/Max/throughput and GC heap delta.
+- Added 5% practical-tie policy and weighted final decision model.
+- Critical correctness/safety failures always override performance score.
+
 ## 1.1.1 — 2026-08-23
 
 - Added executable GVS verification.

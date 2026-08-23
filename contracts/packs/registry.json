@@ -1,0 +1,88 @@
+{
+  "schema": "cvrs-contract-pack-registry.v1",
+  "packs": [
+    {
+      "id": "core.kernel.v1",
+      "domains": [
+        "lifecycle",
+        "module",
+        "service",
+        "routing",
+        "storage",
+        "diagnostics"
+      ]
+    },
+    {
+      "id": "reactive.v1",
+      "domains": [
+        "signal",
+        "computed",
+        "effect",
+        "dependency-graph",
+        "batch"
+      ]
+    },
+    {
+      "id": "runtime.process.v1",
+      "domains": [
+        "process",
+        "exit-code",
+        "stdout",
+        "stderr",
+        "timeout",
+        "cleanup"
+      ]
+    },
+    {
+      "id": "runtime.browser.v1",
+      "domains": [
+        "browser",
+        "navigation",
+        "persistence",
+        "resource-cleanup"
+      ]
+    },
+    {
+      "id": "storage.v1",
+      "domains": [
+        "read",
+        "write",
+        "remove",
+        "preservation",
+        "persistence"
+      ]
+    },
+    {
+      "id": "http.v1",
+      "domains": [
+        "request",
+        "response",
+        "timeout",
+        "failure",
+        "cleanup"
+      ]
+    },
+    {
+      "id": "database.v1",
+      "domains": [
+        "connection",
+        "query",
+        "transaction",
+        "rollback",
+        "failure"
+      ]
+    },
+    {
+      "id": "performance.v1",
+      "domains": [
+        "warmup",
+        "median",
+        "p95",
+        "p99",
+        "max",
+        "throughput",
+        "environment"
+      ]
+    }
+  ]
+}

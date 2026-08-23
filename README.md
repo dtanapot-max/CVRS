@@ -115,3 +115,19 @@ contract, adapter, test expectation, and implementation are compared.
 The CVRS self-test includes positive and negative controls for `REG-004` and
 `REG-006`: conforming rollback behavior must pass, while deliberate service
 definition/default-service loss must fail.
+
+
+## CVRS 2.0 — Discovery / Reverse Engineering Layer
+
+CVRS 2.0 keeps the verified 1.x engine and adds a safe, non-executing discovery front-end:
+
+`ZIP/Repo → Discovery → Canonical Model → Contract Pack → Adapter → CVRS Verification`
+
+Commands:
+
+- `npm run discover -- <target-directory>`
+- `npm run plan -- <target-directory>`
+- `npm run verify`
+
+Discovery output is **candidate information**, never automatic proof of a capability.
+Domain gates become authoritative only after contract mapping/adapter validation.

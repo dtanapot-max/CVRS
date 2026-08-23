@@ -1,11 +1,11 @@
 {
   "gvs": "1.0",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "release": "20260823",
-  "build": "20260823-0750",
+  "build": "20260823-1830",
   "core": "N/A-external-verification-tool",
-  "baseline": "CVRS-v1.1.0",
+  "baseline": "CVRS-v1.2.0",
   "schema": "cvrs-evidence.v1",
-  "status": "GITHUB_READY_SELF_TEST_PASS",
+  "status": "DISCOVERY_ENGINE_CANDIDATE",
   "standard": "CVRS-STANDARD-v1.0.0"
 }

@@ -1,6 +1,6 @@
 {
   "name": "@dtanapot-max/cvrs",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "type": "module",
   "description": "Core Verification & Release Standard (CVRS) \u2014 executable verification, regression, stress, safety and release gates.",
   "license": "MIT",
@@ -8,9 +8,12 @@
     "cvrs": "./run.mjs"
   },
   "scripts": {
-    "test": "node tests/self-test.mjs && node tests/regression-harness-self-test.mjs",
+    "test": "node tests/self-test.mjs && node tests/regression-harness-self-test.mjs && node tests/discovery-self-test.mjs",
     "gvs:verify": "node tests/gvs-verify.mjs",
-    "verify": "npm run gvs:verify && npm test"
+    "verify": "npm run gvs:verify && npm test",
+    "compare": "node tools/compare-cores.mjs",
+    "discover": "node discovery/discover.mjs",
+    "plan": "node tools/plan.mjs"
   },
   "engines": {
     "node": ">=20"
