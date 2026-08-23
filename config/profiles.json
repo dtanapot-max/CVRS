@@ -1,0 +1,6 @@
+{
+  "smoke": ["A"],
+  "standard": ["A","B","C","D","REG"],
+  "release": ["A","B","C","D","REG","STRESS","MEMORY","REPEATABILITY"],
+  "final": ["A","B","C","D","REG","STRESS","MEMORY","REPEATABILITY","FINAL"]
+}

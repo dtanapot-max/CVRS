@@ -1,0 +1,10 @@
+{
+  "name": "@dtanapot-max/cvrs",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Core Verification & Release Standard - executable implementation-neutral Core verification system",
+  "license": "MIT",
+  "bin": {"cvrs": "./run.mjs"},
+  "scripts": {"test": "node tests/self-test.mjs"},
+  "engines": {"node": ">=20"}
+}

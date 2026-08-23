@@ -1,0 +1,6 @@
+{
+  "correctness": {"criticalPassRate": 1, "maxUnhandledErrors": 0, "maxFlakyCriticalTests": 0},
+  "performance": {"minSamples": 7, "maxP95RegressionPct": 10, "maxP99RegressionPct": 15, "maxThroughputDegradationPct": 10},
+  "resources": {"maxListenerDelta": 0, "maxSubscriberDelta": 0, "maxResourceHandleDelta": 0},
+  "recovery": {"minRecoverySuccessRate": 1}
+}
