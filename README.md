@@ -104,3 +104,14 @@ CVRS normative authority is:
 5. executable suites / runner
 
 `docs/CVRS-AI-MASTER-PROMPT.md` is supporting AI execution context and must not override the Standard.
+
+
+## False-positive safeguard
+
+CVRS does **not** automatically classify a failed gate as `CORE_BUG`.
+A new failure is emitted as `UNCLASSIFIED_REQUIRES_DIAGNOSIS` until the target
+contract, adapter, test expectation, and implementation are compared.
+
+The CVRS self-test includes positive and negative controls for `REG-004` and
+`REG-006`: conforming rollback behavior must pass, while deliberate service
+definition/default-service loss must fail.

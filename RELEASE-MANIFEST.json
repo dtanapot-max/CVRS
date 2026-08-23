@@ -1,0 +1,184 @@
+{
+  "product": "CVRS",
+  "version": "1.1.1",
+  "release": "20260823",
+  "build": "20260823-0750",
+  "core": "N/A-external-verification-tool",
+  "baseline": "CVRS-v1.1.0",
+  "schema": "cvrs-evidence.v1",
+  "standard": "CVRS-STANDARD-v1.0.0",
+  "status": "GVS_PASS_SELF_TEST_PASS_GITHUB_READY",
+  "verification": {
+    "gvs": "10/10 PASS",
+    "cvrsSelfTest": "5/5 PASS",
+    "regressionHarness": "4/4 PASS",
+    "syntax": "PASS"
+  },
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "b886eb73563f9184c7dfe53b6c3590523f3793d608340291811a637031c4a4ba",
+      "bytes": 294
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "122c170513713cab5b6ee12e031fcd3ea48b8b2c349c61b122f5b5c55ed09eca",
+      "bytes": 60
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "c77c12e352793d1bee57739cfb7d5709c317dcfd20391df15fe160d8e80105d0",
+      "bytes": 937
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "a73ae30ea109e803227dc207fe5359d14718991df5897ec290cb8ed9d0ad5d97",
+      "bytes": 1074
+    },
+    {
+      "path": "README.md",
+      "sha256": "93d8912f8c11173d968c0213097f5445871971b6b2d0b1f79b2aed3d8ac5b384",
+      "bytes": 4147
+    },
+    {
+      "path": "adapters/core2x.mjs",
+      "sha256": "23a7afefaace46df63cce8e0bf9bf478cdd1f1190d7c1635632a9f014bd273fb",
+      "bytes": 1376
+    },
+    {
+      "path": "config/gates.json",
+      "sha256": "b31c8e475938a4fc76ef6ac676158b804104d2d6b47e1da91a72217efde64d36",
+      "bytes": 362
+    },
+    {
+      "path": "config/profiles.json",
+      "sha256": "5da06abaa637233bfb8f0cf5d2edea3e4457df4f0ac43426d7d8888275d69a83",
+      "bytes": 210
+    },
+    {
+      "path": "docs/CVRS-ADAPTER-CONTRACT-v1.0.0.md",
+      "sha256": "e26f25b923cce57ea6cbda948634a26f760d538ce5a40e1a94ba1e6bd8a044ac",
+      "bytes": 617
+    },
+    {
+      "path": "docs/CVRS-AI-MASTER-PROMPT.md",
+      "sha256": "84873a479347aa6c26a35375400f935ba1d7a208b0fa1d933ecfa0792474de6d",
+      "bytes": 8074
+    },
+    {
+      "path": "docs/CVRS-STANDARD-v1.0.0.md",
+      "sha256": "311bf1440232d39df07f20cf1a41434f2436685363f82a6c0a4cdae02662de55",
+      "bytes": 30405
+    },
+    {
+      "path": "gvs.json",
+      "sha256": "4d7312ef2a1674dc4246b9a488df65658863eb4e199a2d58209ea55d55f5d3d2",
+      "bytes": 280
+    },
+    {
+      "path": "lib/case-worker.mjs",
+      "sha256": "da4e0289dc0ebe9d462973729251615c2ce9c1c6a07a30e5fabcfeaff9244e9d",
+      "bytes": 647
+    },
+    {
+      "path": "lib/evidence.mjs",
+      "sha256": "6d9a58d0a6311c5a14264c171af49a31c543151ac75f4bae6c576a2b42a17f8e",
+      "bytes": 884
+    },
+    {
+      "path": "lib/regression.mjs",
+      "sha256": "96cf8ac4f82611aac8dfacf79a5cbdc46bffaf4ae711895ae590e7cf16be3fa5",
+      "bytes": 535
+    },
+    {
+      "path": "lib/runner.mjs",
+      "sha256": "6937b323dc7cd24e0feaedd520f68867cab60b3a0e4292503023b7ea9fa95822",
+      "bytes": 2210
+    },
+    {
+      "path": "lib/util.mjs",
+      "sha256": "9bb8a66a936b8b1291e2e85d6b828a90083708eba9a0d9f77fcf3b5722a4de5d",
+      "bytes": 1473
+    },
+    {
+      "path": "package.json",
+      "sha256": "91de37e7582fe71467c1f8803fa7fe8f9f07d1f2bbeec9414aa23840c3e3170b",
+      "bytes": 519
+    },
+    {
+      "path": "run.mjs",
+      "sha256": "792d84692b54088d0118ef01a350774c1c07d4432161579fdbbdad19bee095b3",
+      "bytes": 4276
+    },
+    {
+      "path": "suites/a-correctness.mjs",
+      "sha256": "10af3b1ea53ff80d69a741d204dd101d8bbf15cd55dc64b6192e043b88e8d290",
+      "bytes": 2709
+    },
+    {
+      "path": "suites/b-adversarial.mjs",
+      "sha256": "2ca0c0a58f7425f9183dfcf29c0ad9bda15740134b8d32f26b6b859a225c31b9",
+      "bytes": 3498
+    },
+    {
+      "path": "suites/c-safety.mjs",
+      "sha256": "899c0dcb420b727daae2c237590de871affcd07e2581875fc3009cde9caa49cf",
+      "bytes": 2177
+    },
+    {
+      "path": "suites/d-performance.mjs",
+      "sha256": "798f32fe8f9037d5588b067d6310a89f59a748aa0c96d9345a0c6cf6ee6e9c43",
+      "bytes": 1191
+    },
+    {
+      "path": "suites/final.mjs",
+      "sha256": "6860c41210f45e47898209f860223caac7004de192f4963cfdd420754711e68c",
+      "bytes": 190
+    },
+    {
+      "path": "suites/memory.mjs",
+      "sha256": "6c679900bad0b96ea0de6cc49aec156955744c785c4803249fa3645b1ff3d803",
+      "bytes": 605
+    },
+    {
+      "path": "suites/regression.mjs",
+      "sha256": "2754dc94dc5eb0f56e8c62c98c8d155bebb51d7d56de03c335a1991e2c8f1c52",
+      "bytes": 2882
+    },
+    {
+      "path": "suites/repeatability.mjs",
+      "sha256": "4a4d6ea87603e495ab2b3f204a1d6668c5dea14c45dea06b60fe043fd693cf69",
+      "bytes": 627
+    },
+    {
+      "path": "suites/stress.mjs",
+      "sha256": "a88b76b841a05994deb7e23a9adc7892c6bd62c95dbbaf16961208e94dc21a9c",
+      "bytes": 1154
+    },
+    {
+      "path": "tests/fixture-core.mjs",
+      "sha256": "58c43d178bcdd99a41c078d51a8fad432c61b839b7cd548284daef5d1c5195bd",
+      "bytes": 40
+    },
+    {
+      "path": "tests/fixture-suite.mjs",
+      "sha256": "bb327e7629e129d87c044e91dbb946ef8d1f1ae442166afd443e3605eb6499f1",
+      "bytes": 240
+    },
+    {
+      "path": "tests/gvs-verify.mjs",
+      "sha256": "da4ffb3faa19a22c45694c47fb965296b91ae588543a12505674a3d59eb68511",
+      "bytes": 1177
+    },
+    {
+      "path": "tests/regression-harness-self-test.mjs",
+      "sha256": "1a8e142e9dd613561640adb26162435e7efbccc9851993baab902ca22f90b655",
+      "bytes": 1744
+    },
+    {
+      "path": "tests/self-test.mjs",
+      "sha256": "eadf3ff35dfff00e357e721e03025f9c9645b736f6e17e9fb2f187dc9d8ab6a3",
+      "bytes": 1079
+    }
+  ]
+}

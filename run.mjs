@@ -12,6 +12,11 @@ let a;try{a=await loadCore2x(corePath)}catch(e){console.error('INVALID_TARGET',e
 const maps={A,B,C,D,REG,STRESS,MEMORY,REPEATABILITY};const urls={A:new URL('./suites/a-correctness.mjs',import.meta.url).href,B:new URL('./suites/b-adversarial.mjs',import.meta.url).href,C:new URL('./suites/c-safety.mjs',import.meta.url).href,D:new URL('./suites/d-performance.mjs',import.meta.url).href,REG:new URL('./suites/regression.mjs',import.meta.url).href,STRESS:new URL('./suites/stress.mjs',import.meta.url).href,MEMORY:new URL('./suites/memory.mjs',import.meta.url).href,REPEATABILITY:new URL('./suites/repeatability.mjs',import.meta.url).href};
 let cases=[];for(const d of profiles[profile])if(maps[d])for(const tc of maps[d])cases.push({...tc,suiteUrl:urls[d]});
 const results=await runCases(cases,{a,corePath});
+for (const r of results) {
+  if (r.status !== 'PASS' && !r.classification) {
+    r.classification = 'UNCLASSIFIED_REQUIRES_DIAGNOSIS';
+  }
+}
 const criticalFails=results.filter(r=>r.critical&&r.status!=='PASS');const summary={total:results.length,pass:results.filter(r=>r.status==='PASS').length,fail:results.filter(r=>r.status!=='PASS').length};
 let finalMissing=[];if(profile==='final'){const supplied=String(args['final-provider']||'').split(',').filter(Boolean);finalMissing=requiredFinalProviders.filter(x=>!supplied.includes(x));}
 const regressionComparison=compareBaseline(results,args.baseline?path.resolve(String(args.baseline)):null);
